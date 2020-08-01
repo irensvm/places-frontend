@@ -17,13 +17,13 @@ export default class AddPlace extends Component {
       title: this.state.title,
       description: this.state.description,
     };
-    axios.post("http://localhost:5000/api/", body).then((response) => {
+    axios.post("http://localhost:5000/api/places", body).then((response) => {
       this.setState({
         title: "",
         description: "",
       });
       this.props.updateData();
-      return <Redirect to='/list' />
+      return <Redirect to='/placeslist' />
     });
 
     
