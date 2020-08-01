@@ -5,11 +5,14 @@ import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
 import "bootstrap/dist/css/bootstrap.min.css"
 import PlacesList from './components/PlacesList';
+import CustomNavbar from './components/Navbar';
+import "bootstrap/dist/css/bootstrap.min.css"
+
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <CustomNavbar />
       <Switch>
         <Route exact path="/" render={(props) => <Homepage {...props} />} />
         <Route exact path="/list" render={(props) => <PlacesList {...props} />} />
