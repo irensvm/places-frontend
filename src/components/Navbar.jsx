@@ -16,7 +16,7 @@ const CustomNavbar = props => {
                     <Link to="/list">List</Link>
                     <Link to="/addplace">Add</Link>
                     <Link to="/search">Search</Link>
-                    <Link to="/projects">Admin</Link>
+                    <Link to="/admin">Admin</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
