@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export class Admin extends Component {
     constructor(props) {
@@ -17,10 +18,15 @@ export class Admin extends Component {
             this.setState({places: data})
         })    
     }
+    handleDelete = () => {
+        
+    }
     render() {
         const placesList = this.state.places.map(place => (
-            <div>
-                <h4>{place.description}</h4>
+            <div key={place._id}>
+                <h4>{place.name} - {place.description}</h4>
+                <Link className='btn btn-primary' to={'/edit/' + place._id}>Edit</Link>
+                <button className='btn btn-danger' onClick={this.handleDelete}>Delete placce</button>
             </div>
         ))
         return (
