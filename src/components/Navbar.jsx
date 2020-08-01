@@ -7,16 +7,16 @@ const CustomNavbar = props => {
     return (
 
         <Navbar bg="light" variant="light" expand="lg">
-            <Nav.Link to="/">
+            <Link to="/">
             <Navbar.Brand>Places</Navbar.Brand>
-            </Nav.Link>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link to="/list">List</Nav.Link>
-                    <Nav.Link to="/addplace">Add</Nav.Link>
-                    <Nav.Link to="/search">Search</Nav.Link>
-                    <Nav.Link to="/projects">Admin</Nav.Link>
+                    <Link to="/list">List</Link>
+                    <Link to="/addplace">Add</Link>
+                    <Link to="/search">Search</Link>
+                    <Link to="/projects">Admin</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
