@@ -7,7 +7,6 @@ export class Homepage extends Component {
     render() {
         return (
             <div>
-                <h1>homepage</h1>
                 <CustomCarousel />
                 <Highlights />
             </div>

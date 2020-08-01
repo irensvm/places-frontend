@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import Homepage from './components/Homepage';
-import Navbar from './components/Navbar';
 import EditPlace from './components/EditPlace';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import PlacesList from './components/PlacesList';
 import CustomNavbar from './components/Navbar';
+
 import Search from './components/Search';
 import Admin from './components/Admin';
 import AddPlace from './components/AddPlace';

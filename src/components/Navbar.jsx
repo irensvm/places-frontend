@@ -13,10 +13,10 @@ const CustomNavbar = props => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Link to="/list">List</Link>
-                    <Link to="/addplace">Add</Link>
-                    <Link to="/search">Search</Link>
-                    <Link to="/admin">Admin</Link>
+                    <Link className="mr-2" to="/list">List</Link>
+                    <Link className="mr-2" to="/addplace">Add</Link>
+                    <Link className="mr-2" to="/search">Search</Link>
+                    <Link className="mr-2" to="/admin">Admin</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
