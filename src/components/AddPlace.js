@@ -8,7 +8,7 @@ export default class AddPlace extends Component {
     this.state = {
       name: "",
       description: "",
-      imgUrl:
+      imageUrl:
         "https://images.unsplash.com/photo-1560930950-5cc20e80e392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
       loc: {
         type: 'Point',
