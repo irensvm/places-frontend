@@ -52,7 +52,7 @@ export class Map extends Component {
             <div className="mapa" style={{height:"200px",width:"300px"}}>
                 <GoogleMapReact 
                     key={this.state.direccion}
-                    bootstrapURLKeys={ { key: 'AIzaSyC5R2OYlhvGRMmpofdkJ0jL60Tsa7dtZUY'} }
+                    bootstrapURLKeys={ { key: GOOGLE_API_KEY} }
                     defaultCenter={center}
                     defaultZoom={zoom}
                     options={getMapOptions}
